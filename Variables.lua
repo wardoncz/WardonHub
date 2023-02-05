@@ -12,9 +12,9 @@ local function CurrentVersion(v)
     end
 end
 
-local GlobalWebhookUnsplit =
+local GlobalWebhook =
     "https://discord.com/api/webhooks/1071714843050131456/eWyZQYYp9dZOwTGd4Wz9R45G-VYG4CHLaMeEdzc6zCrKp8w2eol8oXs7gBtsGLOBfBxp" -- this is literally in a private channel dumbasses
-local SuggestionsWebhookUnsplit =
+local SuggestionsWebhook =
     "https://discord.com/api/webhooks/1071922611933696051/DnPqkYIAK04IMEOmswi5XWrDIuMng3fl5_Cvd8IDFxs00HNhpMteCHsnQzwS3I4quE-8"
 
 local HttpService = game:GetService("HttpService")
