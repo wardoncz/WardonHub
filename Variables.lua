@@ -120,7 +120,7 @@ end
 
 local function Notify(Message, Duration)
 	Rayfield:Notify({
-		Title = "🔥 WardonHub",
+		Title = "WardonHub",
 		Content = Message,
 		Duration = Duration or 5,
 		Image = 4483362458,
@@ -132,8 +132,8 @@ local function CreateWindow()
 	repeat task.wait() until VCurrentVersion
 
 	local Window = Rayfield:CreateWindow({
-		Name = "🔥 WardonHub - "..game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name.." - "..VCurrentVersion,
-		LoadingTitle = "🔥 WardonHub",
+		Name = "WardonHub - "..game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name.." - "..VCurrentVersion,
+		LoadingTitle = "WardonHub",
 		LoadingSubtitle = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name,
 		ConfigurationSaving = {
 			Enabled = true,
@@ -150,7 +150,7 @@ local function CreateWindow()
 		Universal:CreateSection("AFKing")
 
 		Universal:CreateToggle({
-			Name = "🚫 Anti-AFK",
+			Name = "Anti-AFK",
 			CurrentValue = false,
 			Flag = "Universal-AntiAFK",
 			Callback = function(Value)	end,
@@ -165,7 +165,7 @@ local function CreateWindow()
 		end)
 
 		local AutoRejoin = Universal:CreateToggle({
-			Name = "🔁 Auto Rejoin",
+			Name = "Auto Rejoin",
 			CurrentValue = false,
 			Flag = "Universal-AutoRejoin",
 			Callback = function(Value)
@@ -187,7 +187,7 @@ local function CreateWindow()
 		})
 
 		Universal:CreateToggle({
-			Name = "📶 Auto Re-Execute",
+			Name = "Auto Re-Execute",
 			CurrentValue = false,
 			Flag = "Universal-AutoRe-Execute",
 			Callback = function(Value)
@@ -206,7 +206,7 @@ local function CreateWindow()
 		local GroupId = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Creator.CreatorTargetId
 
 		Universal:CreateToggle({
-			Name = "🚪 Leave Upon Staff Join",
+			Name = "Leave Upon Staff Join",
 			Info = "Kicks you if a player above the group role 1 joins/is in the server",
 			CurrentValue = false,
 			Flag = "Universal-AutoLeave",
@@ -264,14 +264,14 @@ local function CreateWindow()
 		end
 
 		Universal:CreateButton({
-			Name = "🔂 One-Time Server Hop",
+			Name = "One-Time Server Hop",
 			Callback = function()
 				ServerHop()
 			end,
 		})
 
 		Universal:CreateToggle({
-			Name = "🔁 Server Hop",
+			Name = "Server Hop",
 			Info = "Automatically server hops after the interval",
 			CurrentValue = false,
 			Flag = "Universal-ServerHop",
@@ -279,7 +279,7 @@ local function CreateWindow()
 		})
 
 		Universal:CreateSlider({
-			Name = "⏲ Server Hop Intervals",
+			Name = "Server Hop Intervals",
 			Info = "Sets the interval in seconds for the Server Hop",
 			Range = {5, 600},
 			Increment = 1,
