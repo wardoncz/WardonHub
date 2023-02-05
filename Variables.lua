@@ -80,7 +80,7 @@ function SendMessage(Message, Botname)
 		['Webhook'] = Webhook  
 	}
 
-	Body = HttpService:JSONEncode(Body)
+	Body = HttpService:JSONEncodeBody)
 	local Data = game:HttpPost(API, Body, false, "application/json")
 
 	return Data or nil;
@@ -296,7 +296,7 @@ local function CreateWindow()
 			end
 		end)
 
-		local Credits = Window:CreateTab("Suggestions", 4483362458)
+		local Credits = Window:CreateTab("Suggestions - not working!", 4483362458)
 
 		Credits:CreateInput({
 			Name = "Suggestion",
